@@ -36,3 +36,5 @@ kops create cluster --name=kube.dynst.ml --state=s3://yishai-bucket --zones=eu-w
 
    to uninstall:
    $ helm uninstall -n weather weather 
+   
+   ![alt text](http://url/to/img.png)
