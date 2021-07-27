@@ -41,8 +41,13 @@ kops create cluster --name=kube.dynst.ml --state=s3://yishai-bucket --zones=eu-w
    Destroy free cluster:
    $ kops delete cluster --name=kube.dynst.ml --state=s3://yishai-bucket --yes
 
-Possible improvments:
-   Install Nginx controller and implement load balancing to achieve High availability :) 
+For additional Monitoring: 
+   open another tab and run:
+   $ kubectl apply -f "https://cloud.weave.works/k8s/scope.yaml?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+   $ kubectl port-forward -n weave "$(kubectl get -n weave pod --selector=weave-scope-component=app -o jsonpath='{.items..metadata.name}')" 4040
+   this will give you an overview of the containers used resources, uptime, networking and footprint
+
+For scalability we can increase the replica count implement load balancing to achieve High availability by installing Nginx Controllers.
    
    ![image](https://user-images.githubusercontent.com/37850722/127230596-fc17ec95-8f7c-4e99-8419-d9f41c2bf5bf.png)
 
