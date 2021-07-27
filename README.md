@@ -1,6 +1,6 @@
-#weather-api-task
+# weather-api-task
 
-##task description:
+## task description:
 create a deployment pipeline, packing node.js application in Docker image, and deployed using HELM in k8s cluster
 as mentioned in https://github.com/culture-trip/weather-api
 
@@ -9,7 +9,7 @@ By running source init.sh file the following actions are taken:
 2) install all dependencies required 
 3) trigger the main_run.py script
 
-##main_run.py script
+## main_run.py script
 1) import dependencies, check running dir and create Docker client 
 2) if weather-api repo does not exist, clone it
 3) copy Docker files content into the weather-api repo:
@@ -18,7 +18,7 @@ By running source init.sh file the following actions are taken:
 4) interactively create a .env file with API_KEY, PORT and version.
 5) login to docker hub registry and push the image
 
-##K8s deployment
+## K8s deployment
 for testing I created a free tier k8s cluster with 2 nodes 1 master using this guide:
 https://aws.plainenglish.io/how-to-setup-a-kubernetes-cluster-with-aws-free-tier-and-a-free-domain-514d010ae456
 
