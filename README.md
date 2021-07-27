@@ -6,7 +6,7 @@ as mentioned in https://github.com/culture-trip/weather-api
 
 Clone the repo and run:
 ```sh
-init.sh
+source init.sh
 ```
 
 By running source init.sh file the following actions are taken:
