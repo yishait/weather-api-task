@@ -2,6 +2,7 @@ Deploy weather city api to k8s cluster
 
 task description:
 create a deployment pipeline, packing node.js application in Docker image, and deployed using HELM in k8s cluster
+as mentioned in https://github.com/culture-trip/weather-api
 
 By running source init.sh file the following actions are taken:
 1) check if virtualenv exists, if not - create it
