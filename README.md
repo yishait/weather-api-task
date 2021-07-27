@@ -37,5 +37,11 @@ kops create cluster --name=kube.dynst.ml --state=s3://yishai-bucket --zones=eu-w
    to uninstall:
    $ helm uninstall -n weather weather 
    
+   Destroy free cluster:
+   $ kops delete cluster --name=kube.dynst.ml --state=s3://yishai-bucket --yes
+
+Possible improvments:
+   Install Nginx controller and implement load balancing to achieve High availability :) 
+   
    ![image](https://user-images.githubusercontent.com/37850722/127230596-fc17ec95-8f7c-4e99-8419-d9f41c2bf5bf.png)
 
