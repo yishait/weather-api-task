@@ -64,7 +64,9 @@ For additional Monitoring:
    $ kubectl port-forward -n weave "$(kubectl get -n weave pod --selector=weave-scope-component=app -o jsonpath='{.items..metadata.name}')" 4040
    ```
    
-   this will give you an overview of the containers used resources, uptime, networking and footprint
+   this will give you an overview of the containers used resources, uptime, networking and footprint etcetera
+   
+![image](https://user-images.githubusercontent.com/37850722/127234021-9ac9566b-35cc-42a3-9907-0a42ce62bde1.png)
 
 For scalability we can increase the replica count implement load balancing to achieve High availability by installing Nginx Controllers.
    
