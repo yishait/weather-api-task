@@ -4,6 +4,11 @@
 create a deployment pipeline, packing node.js application in Docker image, and deployed using HELM in k8s cluster
 as mentioned in https://github.com/culture-trip/weather-api
 
+Clone the repo and run:
+```sh
+init.sh
+```
+
 By running source init.sh file the following actions are taken:
 1) check if virtualenv exists, if not - create it
 2) install all dependencies required 
