@@ -68,7 +68,7 @@ For additional Monitoring:
    
 ![image](https://user-images.githubusercontent.com/37850722/127234021-9ac9566b-35cc-42a3-9907-0a42ce62bde1.png)
 
-For scalability we can increase the replica count implement load balancing to achieve High availability by installing Nginx Controllers.
+For scaling we can increase the replica count and implement load balancing to achieve High availability using Nginx Controllers.
    
    ![image](https://user-images.githubusercontent.com/37850722/127230596-fc17ec95-8f7c-4e99-8419-d9f41c2bf5bf.png)
 
