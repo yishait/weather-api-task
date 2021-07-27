@@ -1,0 +1,11 @@
+version: '${VERSION}'
+
+services:
+  weather_container:
+    container_name: weather_container
+    build: .
+    image: yishaitamir/weather_image:${VERSION}
+    ports:
+     - "${PORT}:3000"
+    environment:
+     - API_KEY=${API_KEY}
