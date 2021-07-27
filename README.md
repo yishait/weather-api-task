@@ -43,8 +43,11 @@ kops create cluster --name=kube.dynst.ml --state=s3://yishai-bucket --zones=eu-w
 
 For additional Monitoring: 
    open another tab and run:
+   
    $ kubectl apply -f "https://cloud.weave.works/k8s/scope.yaml?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+   
    $ kubectl port-forward -n weave "$(kubectl get -n weave pod --selector=weave-scope-component=app -o jsonpath='{.items..metadata.name}')" 4040
+   
    this will give you an overview of the containers used resources, uptime, networking and footprint
 
 For scalability we can increase the replica count implement load balancing to achieve High availability by installing Nginx Controllers.
